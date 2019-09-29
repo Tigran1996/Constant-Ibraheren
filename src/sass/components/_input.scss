@@ -1,0 +1,27 @@
+form .custom-input {
+  height: 51px;
+  border-color: #777777;
+  color: #777777;
+  border-radius: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  &:focus {
+    box-shadow: none;
+    border-color: #777777;
+  }
+}
+form .custom-textarea {
+  height: 172px;
+  border-color: #777777;
+  color: #777777;
+  border-radius: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  resize: none;
+
+  &:focus {
+    box-shadow: none;
+    border-color: #777777;
+  }
+}

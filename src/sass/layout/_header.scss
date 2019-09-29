@@ -1,0 +1,118 @@
+header{
+  background-color: #1159b4;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  nav{
+    direction: rtl;
+  }
+  .bg-custom-1 {
+    background-color: #85144b;
+  }
+
+  .bg-custom-2 {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  }
+  .container{
+    color: #fff;
+    .navbar{
+      margin-bottom: 0;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .navbar-toggler:focus, .navbar-toggler:hover {
+        text-decoration: none;
+      }
+      [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        cursor: pointer;
+      }
+      .navbar-toggler {
+        display: none;
+        font-size: 1.25rem;
+        padding: 5px 10px;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        border: 1px solid #00e2fc;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        flex-direction: column;
+      }
+      .navbar-toggler-icon {
+        display: inline-block;
+        width: 30px;
+        margin:4px 0;
+        height: 2px;
+        color: #00B8D4;
+        background: #00B8D4 !important;
+        vertical-align: middle;
+        content: "";
+        background-size: 100% 100%;
+      }
+    }
+    .navbar-brand{
+      height: auto;
+      padding: 0;
+      line-height: inherit;
+      cursor: pointer;
+      color: #fff;
+    }
+    .logo{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img{
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+      }
+      .logo_name{
+        margin-right: 10px;
+        > p:nth-child(1){
+          font-size: 27px;
+          font-weight: bold;
+        }
+        > p:nth-child(2){
+          font-size: 22px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,55,244, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+
+
+@media only screen and (max-width: 767px){
+  header{
+    height: auto;
+  }
+  .navbar-toggler{
+    display: flex !important;
+  }
+  .navbar{
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@include adaptiv-to(phone-screens) {
+  header{
+    height: auto;
+  }
+  .navbar-toggler{
+    display: flex !important;
+  }
+  .navbar{
+    justify-content: center;
+    flex-direction: column;
+  }
+}

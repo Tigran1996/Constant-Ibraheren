@@ -1,0 +1,47 @@
+//BACKGROUND
+
+@mixin backimg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+@mixin flex{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+//  TEXT OVERFLOW ELLIPSES
+
+@mixin ellipses($elheight, $row) {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  height: $elheight;
+  -webkit-line-clamp: $row;
+}
+
+$comp: 1024px;
+$tablet: 720px;
+$phone: 570px;
+
+@mixin adaptiv-to($media) {
+  @if $media == phone-screens {
+    @media only screen and (max-width: $tablet - 1) {
+      @content;
+    }
+  } @else if $media == tablet-screens {
+    @media only screen and (min-width: $tablet) and (max-width: $comp) {
+      @content;
+    }
+  } @else if $media == comp-screens {
+    @media only screen and (min-width: $comp + 1) and (min-width: $comp) {
+      @content;
+    }
+  }
+}
