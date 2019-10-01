@@ -1,5 +1,5 @@
-header{
-  background-color: #1159b4;
+.header{
+  background-color: transparent !important;
   min-height: 15vh;
   display: flex;
   align-items: center;
@@ -38,6 +38,7 @@ header{
         border-radius: .25rem;
         border: 1px solid #00e2fc;
         border-radius: 7px;
+        margin-top: 12px;
         margin-bottom: 10px;
         flex-direction: column;
       }

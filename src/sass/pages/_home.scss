@@ -1,15 +1,20 @@
 .main {
+
   direction: rtl;
   section{
     margin-bottom: 100px;
   }
-  &-one{
+  .bg{
     color: #fff;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     background-image: url("../img/background.png");
-    height: 85vh;
+    height: 100vh;
+    position: relative;
+  }
+  &-one{
+    height: 81vh;
     .container{
       height: 100%;
       .owl-carousel{
@@ -17,7 +22,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
         .item{
           display: flex;
           flex-direction: row;
@@ -44,6 +48,10 @@
     }
     .main-content {
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
       .owl-theme {
         .custom-nav {
           position: absolute;
@@ -52,6 +60,7 @@
           transform: translateY(-50%);
           width: 100%;
           z-index: 999999999999999;
+          margin-top: 0;
 
           .owl-prev, .owl-next {
             position: absolute;
@@ -88,15 +97,23 @@
           border-radius: 100%;
           margin-left: 10px;
         }
+        .owl-dot:nth-child(1).active{
+          margin-right:0px;
+          //margin-left: 80px;
+        }
         .owl-dot.active{
           background: #00e2fc;
-          margin:0 30px;
+          margin-right:80px;
         }
       }
 
     }
   }
   &-two{
+    margin-top: 50px;
+    p{
+      font-family: "Red Hat Display";
+    }
     h3{
       color: #0F50AA;
       margin-bottom: 40px;
@@ -153,9 +170,13 @@
           border-radius: 100%;
           margin-left: 10px;
         }
+        .owl-dot:nth-child(1).active{
+          margin-right:0px;
+          //margin-left: 80px;
+        }
         .owl-dot.active{
           background: #00e2fc;
-          margin:0 30px;
+          margin-right:80px;
         }
       }
 
@@ -229,7 +250,7 @@
     font-size: 10pt;
   }
   .main-one{
-    height: auto;
+    //height: auto;
   }
   .custom-nav{
     display: none;
@@ -240,7 +261,14 @@
   }
 }
 @include adaptiv-to(phone-screens) {
+  .bg{
+    height: auto !important;
+    margin-bottom: 160px;
+  }
   .main-one{
+    height: auto;
+  }
+  .header{
     height: auto;
   }
   .custom-nav{
@@ -250,7 +278,7 @@
     display: none;
   }
   .owl-dots{
-    bottom: -45px !important;
+    bottom: -75px !important;
   }
 
 }

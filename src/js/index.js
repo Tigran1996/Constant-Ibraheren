@@ -1,10 +1,12 @@
 $(document).ready(function () {
     //Dropdown
-    $(".dropdown_arrow").click(function () {
-        $(".dropdown_list").toggleClass("d-none");
+    $('.dropdown').on('show.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
     });
-    $("main").click(function () {
-        $(".dropdown_list").addClass("d-none");
+
+// ADD SLIDEUP ANIMATION TO DROPDOWN //
+    $('.dropdown').on('hide.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
 
     //OWL Carousel
@@ -22,11 +24,13 @@ $(document).ready(function () {
         responsive:{
             0:{
                 items: 1,
-                nav:false
+                nav:false,
+                autoHeight: true
             },
             600:{
                 items: 1,
-                nav:false
+                nav:false,
+
 
             },
             1000:{
@@ -49,11 +53,13 @@ $(document).ready(function () {
         responsive:{
             0:{
                 items: 1,
-                nav:false
+                nav:false,
+
 
             },
             600:{
-                items: 2
+                items: 2,
+
             },
             1000:{
                 items: 4

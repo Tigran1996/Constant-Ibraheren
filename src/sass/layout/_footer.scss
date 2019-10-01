@@ -4,13 +4,13 @@ footer{
   background-position: top;
   background-repeat: no-repeat;
   background-image: url("../img/footer_bg.png");
-  padding-top: 90px;
   .footer_top{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
+    padding-top: 100px;
     .social {
       display: flex;
       justify-content: space-around;
