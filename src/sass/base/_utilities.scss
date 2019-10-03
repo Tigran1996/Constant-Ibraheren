@@ -66,3 +66,8 @@
     padding: 0 10px;
   }
 }
+@keyframes centerMe {
+  0% { top: 0%; transform: translateY(0%); }
+  50% { top: 50%; transform: translateY(0%); }
+  100% { top: 50%; transform: translateY(-50%); }
+}
