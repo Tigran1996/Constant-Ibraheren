@@ -72,11 +72,11 @@
       .logo_name{
         margin-right: 10px;
         > p:nth-child(1){
-          font-size: 27px;
+          font-size: 27px ;
           font-weight: bold;
         }
         > p:nth-child(2){
-          font-size: 22px;
+          font-size: 22px ;
           font-weight: 500;
         }
       }
@@ -114,5 +114,23 @@
   .navbar{
     justify-content: center;
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (max-width: 1400px){
+  .header .container .logo img {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+  }
+  .logo_name{
+    > p:nth-child(1){
+      font-size: 25px !important;
+      font-weight: bold;
+    }
+    > p:nth-child(2){
+      font-size: 20px !important;
+      font-weight: 500;
+    }
   }
 }
