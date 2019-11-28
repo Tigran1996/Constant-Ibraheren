@@ -1,5 +1,5 @@
 footer{
-  margin-top: 310px;
+  margin-top: 125px;
   color: #fff;
   background-size: cover;
   background-position: top;
@@ -10,13 +10,15 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     padding-top: 120px;
     .social {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin-top: 20px;
+      a+a{
+        margin-right: 40px;
+      }
     }
     .footer_right{
       display: flex;
@@ -31,18 +33,14 @@ footer{
 
       }
       span{
-        color: #00B8D4;
+        color: #A6CCF6;
       }
     }
   }
   .footer_bottom{
-    min-height: 100px;
-    background: #083478;
+    min-height: 30px;
+    background: transparent;
     text-align: center;
-    padding:20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
 }

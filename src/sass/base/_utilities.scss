@@ -1,3 +1,6 @@
+main{
+  min-height: 70vh;
+}
 .btn-transparent {
   color: white;
   text-transform: uppercase;
@@ -46,13 +49,17 @@
   font-size: 12pt;
   color: #fff;
   padding: 5px 15px;
-  border: 1px solid #00B8D4;
-  background: linear-gradient(180deg, #00B8D4 0%, #00E5FF 100%);
+  border: 1px solid #01859C;
+  //background: linear-gradient(180deg, #01859C 0%, #00E5FF 100%);
+  background: #0B4DD9;
+  transition: 300ms ease-in-out;
   border-radius: 6px;
   &:hover{
     background: #fff;
-    color: #00B8D4;
-    border: 1px solid #00B8D4;
+    transition: 300ms ease-in-out;
+
+    color: #0B4DD9;
+    border: 1px solid #0B4DD9;
   }
 }
 .design_form{

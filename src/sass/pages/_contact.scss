@@ -1,0 +1,114 @@
+.main_contact {
+  direction: rtl;
+  section{
+  }
+  .bg{
+    color: #fff;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url("../img/background.png");
+    height: auto;
+    min-height: 330px;
+    position: relative;
+  }
+  &-one{
+    margin-top: 28px;
+
+    h1{
+      font-family: $font-family;
+      font-weight: bold;
+      font-size: 52px;
+      line-height: 62px;
+      color: $main-color;
+    }
+    .container{
+      @include flex;
+      justify-content: space-between;
+      flex-wrap: wrap-reverse;
+      > div{
+        width: 45%;
+        .inputs{
+          form{
+            @include flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          margin-top: $margin-top-desc;
+          @include flex;
+          flex-direction: column;
+          input,textarea{
+            max-width: 325px;
+            width: 100%;
+            padding: 18px 16px;
+            border: 1px solid rgba(25, 25, 25, 0.32);
+            margin-bottom: 20px;
+          }
+
+        }
+      }
+      .cont2{
+        img{
+          width: 100%;
+          max-height: 410px;
+          object-fit: contain;
+        }
+      }
+
+    }
+
+  }
+}
+
+
+
+@include adaptiv-to(tablet-screens) {
+  .custom-nav{
+    display: none;
+  }
+  .bg{
+    min-height: 235px !important;
+  }
+  .main_contact-one{
+    .container{
+      .cont1{
+        width: 100% !important;
+      }
+      .cont2{
+        width: 100% !important;
+      }
+      .inputs{
+        input,textarea{
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+}
+@include adaptiv-to(phone-screens) {
+  .bg{
+    min-height: 235px !important;
+  }
+  .custom-nav{
+    display: none;
+  }
+  .main_contact-one{
+    .container{
+      .cont1{
+        width: 100% !important;
+      }
+      .cont2{
+        width: 100% !important;
+      }
+      .inputs{
+        input,textarea{
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@include adaptiv-to(comp-screens){
+
+}

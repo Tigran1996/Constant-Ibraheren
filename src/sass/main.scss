@@ -11,6 +11,9 @@
 
 //PAGES
 @import "pages/home";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/news";
 //BASE
 @import "base/utilities";
 @import "base/animations";
@@ -19,4 +22,8 @@
 @font-face {
   font-family: "Red Hat Display";
   src: url("../fonts/RedHatDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Regular.ttf') format('truetype');
 }
