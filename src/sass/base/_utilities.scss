@@ -46,9 +46,11 @@ main{
 
 
 .btn-blue{
-  font-size: 12pt;
+  font-size: 30px;
+  line-height: 24px;
+  font-family: $font-family;
   color: #fff;
-  padding: 5px 15px;
+  padding: 11px 50px;
   border: 1px solid #01859C;
   //background: linear-gradient(180deg, #01859C 0%, #00E5FF 100%);
   background: #0B4DD9;

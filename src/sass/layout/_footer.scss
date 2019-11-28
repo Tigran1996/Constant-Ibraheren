@@ -30,7 +30,14 @@ footer{
       }
       li{
         display: flex;
-
+        font-size: 20px;
+        line-height: 26px;
+      }
+      li+li{
+        margin-top: 20px;
+      }
+      ul{
+        margin-bottom: 0;
       }
       span{
         color: #A6CCF6;
@@ -41,6 +48,8 @@ footer{
     min-height: 30px;
     background: transparent;
     text-align: center;
+    padding-bottom: 25px;
+
   }
 
 }
