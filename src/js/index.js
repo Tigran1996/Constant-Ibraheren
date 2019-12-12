@@ -9,6 +9,9 @@ $(document).ready(function () {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
 
+    var GLOBAL = "";
+    console.log(GLOBAL)
+
     //OWL Carousel
     $('.main-content .owl-carousel').owlCarousel({
         loop: false,
@@ -17,8 +20,8 @@ $(document).ready(function () {
         rtl:true,
         dots:true,
         navText: [
-            '<img src="img/Right_arrow.png" alt="" class="arrow">',
-            '<img src="img/Left_arrow.png" alt="" class="arrow">'
+            '<img src='+GLOBAL+'"img/Right_arrow.png" alt="" class="arrow">',
+            '<img src='+GLOBAL+'"img/Left_arrow.png" alt="" class="arrow">'
         ],
         navContainer: '.main-content .custom-nav',
         responsive:{
