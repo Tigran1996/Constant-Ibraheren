@@ -27,6 +27,9 @@
     <script src="./js/libs/bootstrap.min.js"></script>
     <!--Owl Carousel-->
     <script src="./js/libs/owl.carousel.min.js"></script>
+    <!--Validate Jquery-->
+    <script src="./js/libs/jquery.validate.min.js"></script>
+
     <!--MAIN JS-->
     <script src="./js/index.js"></script>
 
@@ -84,10 +87,16 @@
             <div class="cont1">
                 <h1> תודוא לע</h1>
                 <div class="inputs">
-                    <form action="">
-                        <input type="text" placeholder="םש*">
-                        <input type="text" placeholder="*רפסמ וןפלט*">
-                        <textarea type="text" placeholder="העדוה*"></textarea>
+                    <form action="" id="myform">
+                        <div>
+                            <input type="text" placeholder="םש*" name="name" required>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="*רפסמ וןפלט*" name="subject" required>
+                        </div>
+                        <div>
+                            <textarea type="text" placeholder="העדוה*" name="message" required></textarea>
+                        </div>
                         <button class="btn-blue">
                             חלש
                         </button>

@@ -29,21 +29,30 @@
       > div{
         width: 45%;
         .inputs{
+          margin-top: $margin-top-desc;
+          @include flex;
+          flex-direction: column;
           form{
             @include flex;
             flex-direction: column;
             align-items: flex-start;
+            > div{
+              margin-bottom: 20px;
+              max-width: 325px;
+              width: 100%;
+              input,textarea{
+                width: 100%;
+                padding: 18px 16px;
+              }
+              .error{
+                color: red;
+              }
+
+            }
           }
-          margin-top: $margin-top-desc;
-          @include flex;
-          flex-direction: column;
-          input,textarea{
-            max-width: 325px;
-            width: 100%;
-            padding: 18px 16px;
-            border: 1px solid rgba(25, 25, 25, 0.32);
-            margin-bottom: 20px;
-          }
+
+
+
 
         }
       }
