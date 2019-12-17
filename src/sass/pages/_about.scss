@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-image: url("../img/background.png");
     height: auto;
-    min-height: 330px;
+    min-height: 165px;
     position: relative;
   }
   &-one{
@@ -26,6 +26,8 @@
     }
     .about_desc{
       margin-top: $margin-top-desc;
+      max-height: 328px;
+      overflow-y: auto;
       p{
         font-family: $font-family;
         font-style: normal;

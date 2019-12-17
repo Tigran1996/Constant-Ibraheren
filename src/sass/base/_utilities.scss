@@ -46,8 +46,8 @@ main{
 
 
 .btn-blue{
-  font-size: 30px;
-  line-height: 24px;
+  font-size: 25px;
+  line-height: 20px;
   font-family: $font-family;
   color: #fff;
   padding: 11px 50px;
@@ -86,3 +86,29 @@ main{
     width: 1350px ;
   }
 }
+
+
+//overflow
+
+
+.overflow_style::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.overflow_style::-webkit-scrollbar {
+  width: 15px;
+  background-color: #fff;
+}
+
+.overflow_style::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #31A1BB;
+}
+.scrollbar
+{
+  overflow-y: auto;
+}
+

@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-image: url("../img/background.png");
     height: auto;
-    min-height: 330px;
+    min-height: 165px;
     position: relative;
   }
   &-one{
@@ -105,6 +105,11 @@
     .container{
       .cont1{
         width: 100% !important;
+        text-align: center;
+        .inputs{
+          align-items: center;
+          width: 100%;
+        }
       }
       .cont2{
         width: 100% !important;

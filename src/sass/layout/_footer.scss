@@ -1,5 +1,5 @@
 footer{
-  margin-top: 125px;
+  margin-top: 30px;
   color: #fff;
   background-size: cover;
   background-position: top;
@@ -68,9 +68,17 @@ footer{
     width: 100%;
     padding: 0 30px;
     margin-bottom: 20px;
+     img {
+      max-width: 60px !important;
+    }
   }
   .footer_left{
     width: 100%;
     padding: 0 30px;
+  }
+  footer .footer_top .footer_right li {
+    display: flex;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
