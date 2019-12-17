@@ -17,7 +17,7 @@ $(document).ready(function () {
         loop: false,
         margin: 10,
         nav: true,
-        rtl:false,
+        rtl:true,
         dots:true,
         navText: [
             '<img src='+GLOBAL+'"img/Right_arrow.png" alt="" class="arrow">',
