@@ -19,7 +19,6 @@ $(document).ready(function () {
         nav: true,
         rtl:false,
         dots:true,
-        center:true,
         navText: [
             '<img src='+GLOBAL+'"img/Right_arrow.png" alt="" class="arrow">',
             '<img src='+GLOBAL+'"img/Left_arrow.png" alt="" class="arrow">'
