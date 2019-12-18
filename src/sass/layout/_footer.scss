@@ -24,6 +24,8 @@ footer{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+
       img{
         max-width: 100px;
         margin-left:20px;
@@ -34,7 +36,7 @@ footer{
         line-height: 26px;
       }
       li+li{
-        margin-top: 20px;
+        margin-top: 10px;
       }
       ul{
         margin-bottom: 0;
@@ -66,8 +68,19 @@ footer{
   }
   .footer_right{
     width: 100%;
-    padding: 0 30px;
     margin-bottom: 20px;
+    padding: 0 15px;
+    a{
+      width: 100%;
+    }
+    ul{
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
      img {
       max-width: 60px !important;
     }
@@ -78,7 +91,7 @@ footer{
   }
   footer .footer_top .footer_right li {
     display: flex;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 14px;
   }
 }

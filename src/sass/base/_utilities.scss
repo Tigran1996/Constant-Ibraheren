@@ -1,5 +1,12 @@
-main{
-  min-height: 70vh;
+//main{
+//  min-height: 70vh;
+//}
+body{
+  //max-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .btn-transparent {
   color: white;
@@ -44,6 +51,17 @@ main{
   }
 }
 
+.bg{
+  color: #fff;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../img/background.png");
+  height: auto;
+  min-height: 160px;
+  position: relative;
+  padding-bottom: 21px;
+}
 
 .btn-blue{
   font-size: 25px;
@@ -112,3 +130,13 @@ main{
   overflow-y: auto;
 }
 
+@include adaptiv-to(phone-screens) {
+  .bg{
+    min-height: 90px;
+  }
+}
+@include adaptiv-to(tablet-screens) {
+  .bg{
+    min-height: 120px;
+  }
+}

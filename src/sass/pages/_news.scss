@@ -30,8 +30,6 @@
         width: 65%;
         .news_desc{
           margin-top: $margin-top-desc;
-          max-height: 328px;
-          overflow-y: auto;
           p{
             font-family: $font-family;
             font-style: normal;
@@ -62,12 +60,20 @@
   }
 }
 @include adaptiv-to(tablet-screens) {
+  main_news{
+    p{
+      font-size: 16px!important;
+    }
+    h1{
+      font-size: 36px!important;
+    }
+  }
   .custom-nav{
     display: none;
   }
-  .bg{
-    min-height: 235px !important;
-  }
+  //.bg{
+  //  min-height: 235px !important;
+  //}
   .main_news-one{
     .container{
       .cont1{
@@ -80,9 +86,17 @@
   }
 }
 @include adaptiv-to(phone-screens) {
-  .bg{
-    min-height: 235px !important;
+  main_news{
+    p{
+      font-size: 16px !important;
+    }
+    h1{
+      font-size: 36px !important;
+    }
   }
+  //.bg{
+  //  min-height: 235px !important;
+  //}
   .custom-nav{
     display: none;
   }

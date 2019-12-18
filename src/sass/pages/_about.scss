@@ -4,16 +4,7 @@
   section{
     margin-bottom: 40px;
   }
-  .bg{
-    color: #fff;
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-image: url("../img/background.png");
-    height: auto;
-    min-height: 165px;
-    position: relative;
-  }
+
   &-one{
 
     h1{
@@ -26,8 +17,6 @@
     }
     .about_desc{
       margin-top: $margin-top-desc;
-      max-height: 328px;
-      overflow-y: auto;
       p{
         font-family: $font-family;
         font-style: normal;
@@ -40,5 +29,26 @@
       }
     }
 
+  }
+}
+
+@include adaptiv-to(phone-screens) {
+  .main_about{
+    h1{
+      font-size:36px !important;
+    }
+    p{
+      font-size:16px !important;
+    }
+  }
+}
+@include adaptiv-to(tablet-screens) {
+  .main_about{
+    h1{
+      font-size:36px !important;
+    }
+    p{
+      font-size:16px !important;
+    }
   }
 }

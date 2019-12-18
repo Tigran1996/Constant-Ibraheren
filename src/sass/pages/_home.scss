@@ -254,9 +254,7 @@
         align-items: flex-start;
         justify-content: space-between;
         align-items: flex-start;
-        -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
-        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         border-radius:20px 20px;
         width: 100%;
         .img{
@@ -295,9 +293,7 @@
           transform: scale(1.1);
           margin: 0 10px;
           transition: 400ms ease-in;
-          -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-          -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-          box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
           .company_name{
             transition: 200ms ease-in;
             color:#fff !important;
@@ -345,7 +341,11 @@
 @include adaptiv-to(phone-screens) {
   .company{
     .img{
-      height: 380px !important;
+      height: 225px !important;
+    }
+    .company_name{
+      padding: 10px !important;
+      font-size: 19px !important;
     }
   }
   .company:hover{
