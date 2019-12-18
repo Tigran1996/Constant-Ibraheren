@@ -261,9 +261,8 @@
         width: 100%;
         .img{
           width: 100%;
-          height: 80%;
+          height: 300px;
           padding: 20px;
-          min-height: 300px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -344,7 +343,11 @@
   }
 }
 @include adaptiv-to(phone-screens) {
-
+  .company{
+    .img{
+      height: 380px !important;
+    }
+  }
   .company:hover{
     transform: none !important;
   }
