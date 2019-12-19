@@ -132,11 +132,11 @@ body{
 
 @include adaptiv-to(phone-screens) {
   .bg{
-    min-height: 90px;
+    min-height: 90px !important;
   }
 }
 @include adaptiv-to(tablet-screens) {
   .bg{
-    min-height: 120px;
+    min-height: 120px !important;
   }
 }
