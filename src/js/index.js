@@ -8,9 +8,7 @@ $(document).ready(function () {
     $('.dropdown').on('hide.bs.dropdown', function(e){
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
-
-    var GLOBAL = "";
-    console.log(GLOBAL)
+    var origin   = window.location.origin+'/scripts/front/src/';
 
     //OWL Carousel
     $('.main-content .owl-carousel').owlCarousel({
@@ -20,8 +18,8 @@ $(document).ready(function () {
         rtl:true,
         dots:true,
         navText: [
-            '<img src='+GLOBAL+'"img/Right_arrow.png" alt="" class="arrow">',
-            '<img src='+GLOBAL+'"img/Left_arrow.png" alt="" class="arrow">'
+            '<img src="'+origin+'img/Right_arrow.png" alt="" class="arrow">',
+            '<img src="'+origin+'img/Left_arrow.png" alt="" class="arrow">'
         ],
         navContainer: '.main-content .custom-nav',
         responsive:{
@@ -46,8 +44,8 @@ $(document).ready(function () {
         rtl:true,
         dots:true,
         navText: [
-            '<img src='+GLOBAL+'"img/Left_bottom.png" alt="" class="arrow_min">',
-            '<img src='+GLOBAL+'"img/Right_bottom.png" alt="" class="arrow_min">'
+            '<img src="'+origin+'img/Left_bottom.png" alt="" class="arrow_min">',
+            '<img src="'+origin+'img/Right_bottom.png" alt="" class="arrow_min">'
 
         ],
         navContainer: '.main-content-two .custom-nav',
