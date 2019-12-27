@@ -376,6 +376,12 @@ label:hover:before {
 
 .main {
   direction: rtl; }
+  .main .item {
+    display: none; }
+  .main .owl-item item {
+    display: block; }
+  .main .item:nth-child(1) {
+    display: flex; }
   .main section {
     margin-bottom: 40px; }
   .main .bg_home {
@@ -399,7 +405,6 @@ label:hover:before {
         justify-content: center; }
         .main-one .container .owl-carousel .item {
           position: relative;
-          display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
@@ -458,7 +463,7 @@ label:hover:before {
             left: 0;
             opacity: 0.4; }
         .main-one .container .owl-carousel .owl-dots {
-          bottom: -40px; }
+          bottom: -50px; }
     .main-one .main-content {
       position: relative;
       display: flex;
@@ -503,7 +508,8 @@ label:hover:before {
     font-family: "Red Hat Display"; }
   .main-two h3 {
     color: #01859C;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 39px; }
   .main-two .main-content-two {
     position: relative; }
     .main-two .main-content-two .owl-stage {
@@ -534,7 +540,7 @@ label:hover:before {
     .main-two .main-content-two .owl-dots {
       text-align: center;
       position: absolute;
-      bottom: -40px;
+      bottom: -50px;
       margin-bottom: 10px;
       left: 0;
       right: 0; }
@@ -550,7 +556,6 @@ label:hover:before {
         background: #01859C; }
   .main-two .item {
     padding: 5px 20px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
@@ -613,7 +618,7 @@ label:hover:before {
   .main-one .item > div:nth-child(1) {
     width: 100% !important; }
   .main-one .container .owl-carousel .owl-dots {
-    bottom: -40px; }
+    bottom: -70px; }
   .custom-nav {
     display: none; } }
 
