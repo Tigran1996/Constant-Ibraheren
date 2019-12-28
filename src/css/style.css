@@ -235,13 +235,15 @@ footer {
       footer .footer_top .footer_right li {
         display: flex;
         font-size: 20px;
-        line-height: 26px; }
+        line-height: 26px;
+        white-space: nowrap; }
       footer .footer_top .footer_right li + li {
         margin-top: 10px; }
       footer .footer_top .footer_right ul {
         width: 100%;
         margin-bottom: 0; }
       footer .footer_top .footer_right span {
+        white-space: nowrap;
         color: #A6CCF6; }
   footer .footer_bottom {
     min-height: 30px;
