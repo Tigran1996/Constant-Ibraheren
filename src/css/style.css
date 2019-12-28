@@ -513,6 +513,7 @@ label:hover:before {
   .main-two .main-content-two {
     position: relative; }
     .main-two .main-content-two .owl-stage {
+
       padding: 40px 0px;
       margin: 0px auto; }
     .main-two .main-content-two .owl-theme .custom-nav {
