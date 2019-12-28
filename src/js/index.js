@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     //Dropdown
     $('.dropdown').on('show.bs.dropdown', function(e){
@@ -8,21 +9,15 @@ $(document).ready(function () {
     $('.dropdown').on('hide.bs.dropdown', function(e){
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
-    var origin   = window.location.origin+'/scripts/front/src/';
+    var origin   = window.location.origin+window.IMAGE_FOLDER;
 
     //OWL Carousel
     $('.main-content .owl-carousel').owlCarousel({
-
         loop: false,
         margin: 10,
         nav: false,
         rtl:true,
         dots:true,
-        navText: [
-            '<img src="'+origin+'img/Right_arrow.png" alt="" class="arrow">',
-            '<img src="'+origin+'img/Left_arrow.png" alt="" class="arrow">'
-        ],
-        navContainer: '.main-content .custom-nav',
         responsive:{
             0:{
                 items: 1,
