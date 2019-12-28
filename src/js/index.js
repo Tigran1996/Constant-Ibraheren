@@ -40,8 +40,8 @@ $(document).ready(function () {
         rtl:true,
         dots:true,
         navText: [
-            '<img src="'+origin+'img/Left_bottom.png" alt="" class="arrow_min">',
-            '<img src="'+origin+'img/Right_bottom.png" alt="" class="arrow_min">'
+            '<img src="'+origin+ 'Left_bottom.png" alt="" class="arrow_min">',
+            '<img src="'+origin+'Right_bottom.png" alt="" class="arrow_min">'
 
         ],
         navContainer: '.main-content-two .custom-nav',
