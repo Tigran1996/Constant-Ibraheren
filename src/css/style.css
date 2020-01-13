@@ -436,14 +436,17 @@ label:hover:before {
             height: auto;
             object-fit: contain; }
           .main-one .container .owl-carousel .item svg {
-            z-index: 2;
-            width: 400px;
-            height: 266px; }
+            z-index: 0;
+            width: 265px;
+            height: 265px; }
+            .main-one .container .owl-carousel .item svg image {
+              width: 100%;
+              height: 100%; }
           .main-one .container .owl-carousel .item .svg {
             position: absolute;
             padding: 0 !important;
-            width: 265px;
-            height: 265px;
+            width: 237px;
+            height: 237px;
             display: flex;
             flex-direction: row-reverse; }
           .main-one .container .owl-carousel .item .svg:after {
@@ -462,7 +465,7 @@ label:hover:before {
             width: 50%;
             height: 100%;
             border: 12px solid #AECCEC;
-            z-index: 3;
+            z-index: 1;
             border-right: 0;
             left: 0;
             opacity: 0.4; }
