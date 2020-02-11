@@ -1,5 +1,14 @@
 
+
 $(document).ready(function () {
+    $('.see_password').on('click', function () {
+        if($(this).siblings(".pass1").attr('type') === "password"){
+            $(this).siblings(".pass1").attr('type', 'text');
+        }else{
+            $(this).siblings(".pass1").attr('type', 'password')
+        }
+    });
+
     //Dropdown
     $('.dropdown').on('show.bs.dropdown', function(e){
         $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
@@ -62,5 +71,47 @@ $(document).ready(function () {
         }
     });
     $("#myform").validate();
+    $(".valid-login").validate({
+        errorPlacement: function(error, element) {
+            $(element).closest('.error_append').append(error);
+        },
+        rules: {
+            'entry[email]': {
+                required: true,
+                email: true
+            },
+        }
+    });
+    $(".password-recovery").validate({
+        errorPlacement: function(error, element) {
+            $(element).closest('.error_append').append(error);
+        },
+        rules: {
+            password : {
+                minlength : 5
+            },
+            password_confirm : {
+                minlength : 5,
+                equalTo : "#pass1"
+            }
+        }
+    });
 
+    $(".valid-login input").on("blur",function () {
+        if ($(this).hasClass("valid")){
+            $(this).parent(".input").addClass("valid-inp");
+        }else{
+            $(this).parent(".input").removeClass("valid-inp");
+
+        }
+    });
+
+    $(".password-recovery #Password2").on("blur",function () {
+        if ($(this).hasClass("valid")){
+            $(this).parent(".input").addClass("valid-inp");
+        }else{
+            $(this).parent(".input").removeClass("valid-inp");
+
+        }
+    });
 });
