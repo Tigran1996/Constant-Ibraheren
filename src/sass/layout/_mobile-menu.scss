@@ -1,13 +1,16 @@
-.mobile-menu {
-  display: none !important;
+
+.header nav .navbar-nav .mobile-menu {
+  display: none ;
 }
-@include adaptiv-to(tablet-screens) {
+@media (max-width:767px) {
   .web-menu{
     display: none !important;
   }
   .mobile-menu{
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
+    justify-content: flex-start !important;
+
     li{
       margin-top: 5px;
       margin-left: 30px !important;
@@ -16,25 +19,10 @@
     li+li{
       margin-right: 0 !important;
     }
-  }
-}
-@include adaptiv-to(phone-screens) {
-  .web-menu{
-    display: none !important;
-  }
-  .mobile-menu{
-    display: flex;
-    flex-wrap: wrap;
-    li{
-      margin-top: 5px;
-      margin-left: 30px !important;
 
-    }
-    li+li{
-      margin-right: 0 !important;
-    }
+  }
+  .btn-sign{
+    width: 100% !important;
   }
 }
-@include adaptiv-to(comp-screens){
 
-}
