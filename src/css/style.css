@@ -1413,7 +1413,8 @@ form .custom-textarea {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: rgba(0, 0, 0, 0.87); }
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 20px; }
     .main_account .two-flex .account-list ul li span {
       margin-left: 14px;
       font-weight: 500;
