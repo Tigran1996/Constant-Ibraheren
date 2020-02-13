@@ -1,0 +1,100 @@
+.dropdown {
+  margin: 0px auto;
+  position: relative;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  span{
+    //margin-bottom: 3px;
+    img{
+      width: 12.68px;
+      height: 11px;
+      margin-right: 18px;
+    }
+
+  }
+  a{
+    color: #000 !important;
+    text-decoration: none;
+  }
+}
+
+.dropdown label {
+  display: block;
+  padding: 8px 16px;
+  color: #FAFAFA;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding-right: 22px;
+  &:after{
+    content: "";
+    background: url("../img/arrow_black.png");
+    width: 14px;
+    height: 11px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.dropdown ul {
+  list-style: none;
+  width: 100%;
+  min-width: max-content;
+  border-radius: 20px;
+  position: absolute;
+  top: 100%;
+  overflow: hidden;
+  top:33px;
+
+
+}
+
+.dropdown ul li {
+  padding: 0px 16px;
+  margin: 0 !important;
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: height 0.1s linear 0s;
+
+  span{
+    font-weight: bold !important;
+    font-size: 16px !important;
+    line-height: 17px !important;
+    color: #2196AA !important;
+    margin: 0 16px;
+  }
+  img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+}
+
+.clicked ul{
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.clicked ul li:hover  ,
+.clicked ul li.selected {
+  background: #F2F2F6;
+}
+
+.clicked ul li {
+  width: 100%;
+  padding: 18px 16px;
+  padding-left: 50px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

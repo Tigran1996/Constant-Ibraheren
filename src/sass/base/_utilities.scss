@@ -38,6 +38,31 @@ body{
     color: #0B4DD9;
   }
 }
+.btn-sign{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: $font-family;
+  color: #fff;
+  padding: 17px 55px;
+  border: 1px solid #01859C;
+  background: linear-gradient(180deg, #01859C 0%, #015F70 100%);
+  transition: 300ms ease-in-out;
+  border-radius: 6px;
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  &:hover{
+    background: #fff;
+    transition: 300ms ease-in-out;
+    color: #01859C;
+    border: 1px solid #01859C;
+    a{
+      color: #01859C ;
+    }
+  }
+}
 .btn-beaut{
   font-weight: bold;
   font-size: 16px;

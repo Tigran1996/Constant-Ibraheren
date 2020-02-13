@@ -1,0 +1,87 @@
+.two-flex{
+  display: flex;
+  flex-wrap: wrap;
+  > div{
+    width: 45%;
+    margin-left: 10%;
+
+  }
+  > div:nth-last-child(1){
+    margin-left: 0;
+  }
+}
+.three-flex{
+  display: flex;
+  flex-wrap: wrap;
+  > div{
+    width: 30%;
+    margin-right: 5%;
+
+  }
+  > div:nth-child(3n){
+    margin-right: 0;
+  }
+}
+.four-flex{
+  display: flex;
+  flex-wrap: wrap;
+  > div{
+    width: 22%;
+    margin-right: 2%;
+
+  }
+  > div:nth-child(4n){
+    margin-right: 0;
+  }
+}
+
+
+@include adaptiv-to(comp-screens ) {
+}
+@include adaptiv-to(tablet-screens) {
+  .two-flex,.four-flex{
+    > div {
+      width: 100% !important;
+      margin-bottom: 30px;
+      margin-left: 0;
+    }
+    > div:nth-last-child(1){
+      margin-bottom: 0;
+    }
+  }
+  .three-flex{
+    > div {
+      width: 100% !important;
+      margin-bottom: 40px;
+      margin-left: 0;
+    }
+    > div:nth-last-child(1){
+      margin-bottom: 0;
+    }
+  }
+}
+@include adaptiv-to(phone-screens) {
+
+  .two-flex,.four-flex{
+    > div {
+      width: 100% !important;
+      margin-bottom: 30px;
+      margin-left: 0;
+
+    }
+    > div:nth-last-child(1){
+      margin-bottom: 0;
+    }
+  }
+  .three-flex{
+    > div {
+      width: 100% !important;
+      margin-bottom: 40px;
+      margin-left: 0;
+
+    }
+    > div:nth-last-child(1){
+      margin-bottom: 0;
+    }
+  }
+}

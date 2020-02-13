@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>עוצמות שיווקיות</title>
+    <!--FAVICON-->
+    <link rel="icon" href="img/otzmot_logos.png">
+    <!--Bootstrap Right to left    -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.full.min.css">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+    <!--STYLE-->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <!--JQUERY-->
+    <script src="./js/libs/jquery-3.3.1.min.js"></script>
+    <!--BOOTSTRAP-->
+    <script src="./js/libs/bootstrap.min.js"></script>
+    <!--Owl Carousel-->
+    <script src="./js/libs/owl.carousel.min.js"></script>
+    <!--Validate Jquery-->
+    <script src="./js/libs/jquery.validate.min.js"></script>
+
+    <!--MAIN JS-->
+    <script src="./js/index.js"></script>
+
+</head>
+
+<body dir="">
+
+<main class="main_invoice">
+    <div class="bg">
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-sm">
+                    <a class="logo navbar-brand">
+                        <img src="img/otzmot_logo.png" alt="">
+                        <div class="logo_name">
+                            <p>עוצמות שיווקיות</p>
+                            <p>עושים עסקים קטנים גדולים</p>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-list-2">
+                        <ul class="navbar-nav">
+                            <div class="nav_about">
+                                <li class="nav-item">
+                                    <a href="invoice.html">חשבונית</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="my-account.html">חשבון שלי</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <span>עוד <img src="img/arrow.svg" alt=""></span>
+                                    <ul>
+                                        <li><a href="#"><img src="img/info.svg" alt=""><span>תודוא לע</span> </a></li>
+                                        <li><a href="#"><img src="img/tel.svg" alt=""><span>רשק ונתיא רוצית</span> </a></li>
+                                        <li><a href="#"><img src="img/out.svg" alt=""><span>להתנתק</span> </a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section class="main_invoice-one">
+        <div class="container">
+            <h1> חשבונית</h1>
+            <div class="two-flex">
+                <div class="invoice-list">
+                    <h5>
+                         רשימה
+                    </h5>
+                    <table>
+                        <tr>
+                            <th>קובץ</th>
+                            <th>תאריך</th>
+                            <th>מס. חשבונית</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img">
+                                    <img src="img/file.svg" alt="">
+                                </div>
+                            </td>
+                            <td>21.10.21</td>
+                            <td>555555555555555</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img">
+                                    <img src="img/file.svg" alt="">
+                                </div>
+                            </td>
+                            <td>21.10.21</td>
+                            <td>555555555555555</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img">
+                                    <img src="img/file.svg" alt="">
+                                </div>
+                            </td>
+                            <td>21.10.21</td>
+                            <td>555555555555555</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                <div class="invoice-num">
+                    <form action=" " name="upload">
+                        <label for="">מס. חשבונית</label>
+                        <div class="upload-div">
+                            <div class="input">
+                                <input type="text" placeholder="מס. חשבונית">
+                            </div>
+                            <div class="img">
+                                <label for="file">
+                                    <p>העלאת קבצים</p>
+                                    <img src="img/upload.svg" alt="">
+                                </label>
+                                <input type="file" style="display: none" id="file" name="myfile">
+                            </div>
+                        </div>
+                        <div class="progress-list">
+                            <div class="progress-my">
+                                <div class="img">
+                                    <img src="img/file-white.svg" alt="">
+                                </div>
+                                <div class="filename">
+                                    <div class="file">
+                                        <p class="name">Lorem Ipsum</p>
+                                        <p class="procent">82%</p>
+                                    </div>
+                                    <progress class="progress-color uploading "  id="progressBar" value="0" max="100">
+                                    </progress>
+                                    <p id="status" title="uploading">טעינה...</p>
+                                    <p id="status" title="uploading complate">טעינה הסתיימה בהצלחה...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container footer_top">
+        <div class="footer_right">
+            <ul>
+                <li><span><b>כתובת:&nbsp;&nbsp;</b></span>כביש יגברד</b></li>
+                <li><span><b>אימייל:&nbsp;&nbsp;</b></span>info@otsmot.com</b></li>
+                <li> <span><b>בטלפון:&nbsp;&nbsp;</b></span>722556655 (972)+</b></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer_bottom container">
+        <p>Constant Technologies 2019 כל הזכויות שמורות Ⓒ</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
+

@@ -9,15 +9,24 @@ $(document).ready(function () {
         }
     });
 
-    //Dropdown
-    $('.dropdown').on('show.bs.dropdown', function(e){
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-    });
+//     //Dropdown
+//     $('.dropdown').on('show.bs.dropdown', function(e){
+//         $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+//     });
+//
+// // ADD SLIDEUP ANIMATION TO DROPDOWN //
+//     $('.dropdown').on('hide.bs.dropdown', function(e){
+//         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+//     });
 
-// ADD SLIDEUP ANIMATION TO DROPDOWN //
-    $('.dropdown').on('hide.bs.dropdown', function(e){
-        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    //dropdown menu
+    $(".dropdown").on("click",function () {
+        $(this).toggleClass("clicked");
     });
+    $("section,footer").on("click",function () {
+        $(".dropdown").removeClass("clicked");
+    })
+
     var origin   = window.location.origin+window.IMAGE_FOLDER;
 
     //OWL Carousel
@@ -115,3 +124,28 @@ $(document).ready(function () {
         }
     });
 });
+
+//progress
+xhr.upload.onprogress = function(event) {
+    alert( 'Загружено на сервер ' + event.loaded + ' байт из ' + event.total );
+}
+
+xhr.upload.onload = function() {
+    alert( 'Данные полностью загружены на сервер!' );
+}
+
+xhr.upload.onerror = function() {
+    alert( 'Произошла ошибка при загрузке данных на сервер!' );
+}
+xhr.onprogress = function(event) {
+    alert( 'Получено с сервера ' + event.loaded + ' байт из ' + event.total );
+}
+
+document.forms.upload.onsubmit = function() {
+    var input = this.elements.myfile;
+    var file = input.files[0];
+    if (file) {
+        upload(file);
+    }
+    return false;
+}
