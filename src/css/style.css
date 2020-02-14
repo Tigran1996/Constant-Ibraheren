@@ -3,9 +3,10 @@
   display: flex;
   align-items: center;
   width: 100%; }
-  .header nav.signed .navbar-toggler, .header nav.signed .collapse {
-    display: none !important; }
+  .header nav.signed .hide-sign {
+    display: none; }
   .header nav.signed .btn-sign {
+    display: block;
     width: 30%;
     max-width: 200px;
     text-align: center;
@@ -51,6 +52,7 @@
         font-weight: 600; }
     .header nav .btn-sign {
       width: 20%;
+      display: none;
       max-width: 200px;
       text-align: center; }
   .header .bg-custom-1 {

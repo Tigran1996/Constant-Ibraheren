@@ -4,10 +4,11 @@
   align-items: center;
   width: 100%;
   nav.signed{
-    .navbar-toggler,.collapse {
-      display: none !important;
+    .hide-sign{
+      display: none;
     }
     .btn-sign {
+      display: block;
       width: 30%;
       max-width: 200px;
       text-align: center;
@@ -70,6 +71,8 @@
     }
     .btn-sign{
       width: 20%;
+      display: none;
+
       max-width: 200px;
       text-align: center;
     }
