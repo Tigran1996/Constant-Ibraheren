@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
     $('.see_password').on('click', function () {
         if($(this).siblings(".pass1").attr('type') === "password"){
@@ -25,7 +23,7 @@ $(document).ready(function () {
     });
     $("section,footer").on("click",function () {
         $(".dropdown").removeClass("clicked");
-    })
+    });
 
     var origin   = window.location.origin+window.IMAGE_FOLDER;
 
@@ -44,7 +42,7 @@ $(document).ready(function () {
             },
             600:{
                 items: 1,
-                nav:false,
+                nav:false
             },
             1000:{
                 items: 1
@@ -66,13 +64,10 @@ $(document).ready(function () {
         responsive:{
             0:{
                 items: 1,
-                nav:false,
-
-
+                nav:false
             },
             600:{
-                items: 2,
-
+                items: 2
             },
             1000:{
                 items: 4
@@ -89,6 +84,9 @@ $(document).ready(function () {
                 required: true,
                 email: true
             },
+            password : {
+                minlength :8
+            }
         }
     });
     $(".password-recovery").validate({
@@ -128,18 +126,18 @@ $(document).ready(function () {
 //progress
 xhr.upload.onprogress = function(event) {
     alert( 'Загружено на сервер ' + event.loaded + ' байт из ' + event.total );
-}
+};
 
 xhr.upload.onload = function() {
     alert( 'Данные полностью загружены на сервер!' );
-}
+};
 
 xhr.upload.onerror = function() {
     alert( 'Произошла ошибка при загрузке данных на сервер!' );
-}
+};
 xhr.onprogress = function(event) {
     alert( 'Получено с сервера ' + event.loaded + ' байт из ' + event.total );
-}
+};
 
 document.forms.upload.onsubmit = function() {
     var input = this.elements.myfile;
@@ -148,4 +146,4 @@ document.forms.upload.onsubmit = function() {
         upload(file);
     }
     return false;
-}
+};
