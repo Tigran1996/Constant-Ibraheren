@@ -72,3 +72,21 @@ label:hover:before {
   //border: 2px solid #ff214f !important;
   //background: #ffffff;
 }
+
+.he{
+  [type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+    padding-right: 32px;
+  }
+  /* checkbox aspect */
+  [type="checkbox"]:not(:checked) + label:before,
+  [type="checkbox"]:checked + label:before {
+    right: 0;
+
+  }
+  /* checked mark aspect */
+  [type="checkbox"]:not(:checked) + label:after,
+  [type="checkbox"]:checked + label:after {
+    right: 1px;
+  }
+}

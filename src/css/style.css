@@ -487,6 +487,19 @@ form .custom-textarea {
   border: 2px dotted #ff214f; }
 
 /* hover style just for information */
+.he {
+  /* checkbox aspect */
+  /* checked mark aspect */ }
+  .he [type="checkbox"]:not(:checked) + label,
+  .he [type="checkbox"]:checked + label {
+    padding-right: 32px; }
+  .he [type="checkbox"]:not(:checked) + label:before,
+  .he [type="checkbox"]:checked + label:before {
+    right: 0; }
+  .he [type="checkbox"]:not(:checked) + label:after,
+  .he [type="checkbox"]:checked + label:after {
+    right: 1px; }
+
 .two-flex {
   display: flex;
   flex-wrap: wrap; }
