@@ -1156,7 +1156,8 @@ form .custom-textarea {
     margin-left: 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
     .main_invoice .two-flex .invoice-num .upload-div .input .input-box {
       width: 75%;
       background: rgba(1, 133, 156, 0.05);
@@ -1182,6 +1183,8 @@ form .custom-textarea {
           max-width: 24px; }
     .main_invoice .two-flex .invoice-num .upload-div .input button {
       width: 20%; }
+    .main_invoice .two-flex .invoice-num .upload-div .input label.error {
+      width: 100%; }
 
 .main_invoice .two-flex .invoice-num .progress-list {
   width: 70%;
@@ -1543,6 +1546,12 @@ body {
   background-color: #FF1B4F; }
   .btn-purple:hover {
     color: white; }
+
+label.error {
+  margin-top: 5px;
+  color: red !important;
+  font-size: 14px !important;
+  font-weight: 700 !important; }
 
 .bg {
   color: #fff;

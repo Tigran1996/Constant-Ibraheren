@@ -75,6 +75,13 @@ $(document).ready(function () {
         }
     });
     $("#myform").validate();
+
+    $("#file-form").validate({
+        errorPlacement: function(error, element) {
+            $(element).closest('.error_append').append(error);
+        },
+    });
+
     $(".valid-login").validate({
         errorPlacement: function(error, element) {
             $(element).closest('.error_append').append(error);

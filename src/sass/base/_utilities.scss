@@ -99,7 +99,12 @@ body{
     color: white;
   }
 }
-
+label.error{
+  margin-top: 5px;
+  color: red !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
 .bg{
   color: #fff;
   background-size: cover;
