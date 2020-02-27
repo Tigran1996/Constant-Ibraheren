@@ -73,20 +73,20 @@ label:hover:before {
   //background: #ffffff;
 }
 
-.he{
-  [type="checkbox"]:not(:checked) + label,
-  [type="checkbox"]:checked + label {
-    padding-right: 32px;
-  }
-  /* checkbox aspect */
-  [type="checkbox"]:not(:checked) + label:before,
-  [type="checkbox"]:checked + label:before {
-    right: 0;
+  .he{
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+      padding-right: 32px;
+    }
+    /* checkbox aspect */
+    [type="checkbox"]:not(:checked) + label:before,
+    [type="checkbox"]:checked + label:before {
+      right: 0;
 
+    }
+    /* checked mark aspect */
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+      right: 1px;
+    }
   }
-  /* checked mark aspect */
-  [type="checkbox"]:not(:checked) + label:after,
-  [type="checkbox"]:checked + label:after {
-    right: 1px;
-  }
-}

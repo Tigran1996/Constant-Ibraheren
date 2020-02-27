@@ -1152,23 +1152,36 @@ form .custom-textarea {
       color: #016677;
       margin-left: 16px; }
   .main_invoice .two-flex .invoice-num .upload-div .input {
-    width: 55%;
-    margin-left: 10%; }
-    .main_invoice .two-flex .invoice-num .upload-div .input input {
+    width: 100%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .main_invoice .two-flex .invoice-num .upload-div .input .input-box {
+      width: 75%;
       background: rgba(1, 133, 156, 0.05);
       border: 1px solid #01859C;
-      padding: 13px 16px;
-      font-weight: 500;
-      font-size: 16px;
-      width: 100%;
-      line-height: 21px;
-      color: rgba(0, 0, 0, 0.6); }
-  .main_invoice .two-flex .invoice-num .upload-div .img {
-    width: 35%; }
-    .main_invoice .two-flex .invoice-num .upload-div .img img {
-      width: 100%;
-      object-fit: contain;
-      max-width: 24px; }
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .main_invoice .two-flex .invoice-num .upload-div .input .input-box input {
+        background: transparent;
+        padding: 13px 16px;
+        font-weight: 500;
+        border: 0;
+        font-size: 16px;
+        width: 75%;
+        line-height: 21px;
+        color: rgba(0, 0, 0, 0.6); }
+      .main_invoice .two-flex .invoice-num .upload-div .input .input-box .img {
+        background: #01859C;
+        padding: 11px 19px; }
+        .main_invoice .two-flex .invoice-num .upload-div .input .input-box .img img {
+          width: 100%;
+          object-fit: contain;
+          max-width: 24px; }
+    .main_invoice .two-flex .invoice-num .upload-div .input button {
+      width: 20%; }
 
 .main_invoice .two-flex .invoice-num .progress-list {
   width: 70%;
@@ -1452,15 +1465,18 @@ body {
   justify-content: space-between; }
 
 .btn-transparent {
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 600;
+  background: rgba(1, 133, 156, 0.1);
+  color: #01859C;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
   border: 1px solid white;
-  padding: 10px 20px;
+  padding: 18px 20px;
   border-radius: 0; }
   .btn-transparent:hover {
-    color: white; }
+    transition: 300ms ease-in-out;
+    background: rgba(1, 133, 156, 0.25); }
 
 .btn-bordered-white {
   font-size: 25px;
