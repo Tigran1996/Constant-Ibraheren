@@ -29,7 +29,11 @@
           > div{
             width: 50%;}
             .img{
+              cursor: pointer;
+
               label{
+                cursor: pointer;
+
                 display: flex;
                 align-items: center;
                 p{
@@ -45,9 +49,10 @@
           width: 100%;
           margin-left: 10%;
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           justify-content: space-between;
           flex-wrap: wrap;
+          min-height: 81px;
           .input-box{
             width: 75%;
             background: rgba(1, 133, 156, 0.05);
@@ -173,15 +178,29 @@
         color: rgba(82, 95, 127, 0.8);
       }
       td, th {
-        border-bottom: 1px solid rgba(82, 95, 127, 0.15);;
-        text-align: left;
+        border-bottom: 1px solid rgba(82, 95, 127, 0.15);
         padding: 8px;
       }
 
+      .overflow_style{
+        height: 500px;
+        overflow-y: scroll;
 
+      }
     }
   }
 }
+//.he{
+//  .invoice-list{
+//    border-left: 2px solid rgba(82, 95, 127, 0.3);
+//    padding: 15px 30px;
+//    padding-right: 0;
+//    td, th {
+//      text-align: right !important;
+//    }
+//
+//  }
+//}
 
 
 
