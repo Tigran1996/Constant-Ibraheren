@@ -58,10 +58,10 @@ body{
   &:hover{
     background: #fff;
     transition: 300ms ease-in-out;
-    color: #01859C;
+    color: #01859C !important;
     border: 1px solid #01859C;
     a{
-      color: #01859C ;
+      color: #01859C !important;
     }
   }
 }

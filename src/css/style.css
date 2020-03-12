@@ -1522,10 +1522,10 @@ body {
   .btn-sign:hover {
     background: #fff;
     transition: 300ms ease-in-out;
-    color: #01859C;
+    color: #01859C !important;
     border: 1px solid #01859C; }
     .btn-sign:hover a {
-      color: #01859C; }
+      color: #01859C !important; }
 
 .btn-beaut {
   font-weight: bold;
