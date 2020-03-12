@@ -7,8 +7,6 @@
     display: none; }
   .header nav.not-signed .btn-sign {
     display: block;
-    width: 30%;
-    max-width: 200px;
     text-align: center;
     box-sizing: border-box; }
   .header nav {
@@ -16,7 +14,6 @@
     .header nav .collapse {
       margin: 0 auto;
       width: 50%;
-      display: flex !important;
       justify-content: flex-start;
       align-items: center; }
     .header nav .navbar-nav {
@@ -51,9 +48,7 @@
         font-size: 16px;
         font-weight: 600; }
     .header nav .btn-sign {
-      width: 20%;
       display: none;
-      max-width: 200px;
       text-align: center; }
   .header .bg-custom-1 {
     background-color: #85144b; }
@@ -110,7 +105,8 @@
         height: auto;
         object-fit: contain; }
       .header .container .logo .logo_name {
-        margin-right: 10px; }
+        margin-right: 10px;
+        white-space: nowrap; }
         .header .container .logo .logo_name > p:nth-child(1) {
           font-size: 27px;
           font-weight: bold; }
@@ -208,6 +204,10 @@
     font-weight: 500; } }
 
 @media (max-width: 767px) {
+  .header nav.not-signed .btn-sign {
+    margin-right: 0 !important;
+    max-width: 100px;
+    padding: 9px 16px; }
   .navbar-collapse {
     width: 100% !important;
     padding-right: 15px;
