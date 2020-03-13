@@ -1269,7 +1269,7 @@ form .custom-textarea {
     padding: 8px; }
   .main_invoice .two-flex .invoice-list .overflow_style {
     height: 500px;
-    overflow-y: scroll; }
+    overflow-y: auto; }
 
 @media only screen and (min-width: 720px) and (max-width: 1200px) {
   .main_invoice-one .two-flex .invoice-list {
