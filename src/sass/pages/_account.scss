@@ -15,14 +15,21 @@
 
   }
   .two-flex{
+    align-items: center;
     .img{
-      max-width: 492px;
+      max-width: 390px;
+      width: 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: max-content;
       img{
         width: 100%;
         object-fit: contain;
       }
     }
     .account-list{
+      width: 55%;
       display: flex;
       flex-wrap: wrap;
       h1{
@@ -32,7 +39,7 @@
         margin-left: 32px;
         border-left: 2px solid rgba(82, 95, 127, 0.3);
         padding-left: 10px;
-        width: calc(50% - 32px);
+        width: calc(50% - 22px);
         margin-top: 55px;
         li{
           font-weight: 500;
@@ -41,7 +48,7 @@
           color: #2196AA;
           margin-bottom: 20px;
           span{
-            margin-left: 14px;
+            margin-left: 7px;
             font-weight: 500;
             font-size: 18px;
             line-height: 24px;
