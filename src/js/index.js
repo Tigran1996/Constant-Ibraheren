@@ -96,6 +96,25 @@ $(document).ready(function () {
             }
         }
     });
+    $(".account-data").validate({
+        errorPlacement: function(error, element) {
+            $(element).closest('.error_append').append(error);
+        },
+        rules: {
+            name : {
+                required: true,
+            },
+            list : {
+                required: true,
+            },
+            brnum : {
+                required: true,
+            },
+            acnum : {
+                required: true,
+            },
+        }
+    });
     $(".password-recovery").validate({
         errorPlacement: function(error, element) {
             $(element).closest('.error_append').append(error);

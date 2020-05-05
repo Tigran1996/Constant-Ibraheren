@@ -11,6 +11,7 @@
     <link rel="icon" href="img/otzmot_logos.png">
     <!--Bootstrap Right to left    -->
     <link rel="stylesheet" href="./css/bootstrap.rtl.full.min.css">
+    <!--<link rel="stylesheet" href="./css/bootstrap.min.css">-->
     <!--Owl Carousel-->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
@@ -35,7 +36,7 @@
 
 </head>
 
-<body dir="">
+<body dir="he">
 
 <main class="main_invoice">
     <div class="bg">
@@ -238,7 +239,7 @@
                                         <input type="file" style="display: none" id="file" name="myfile" required>
                                     </div>
                                 </div>
-                                <button class="btn-transparent ">Send</button>
+                                <button class="btn-transparent" type="button" data-toggle="modal" data-target="#exampleModalCenter">Send</button>
                             </div>
 
                         </div>
@@ -269,6 +270,64 @@
         </div>
     </section>
 </main>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">כדי להמשיך אנא ספק את פרטי חשבון הבנק שלך</h5>
+            </div>
+            <div class="modal-body">
+                <form action="" id="account-data" class="account-data">
+                    <div class="input-group error_append">
+                        <label for="name">שם החשבון</label>
+                        <div class="input ">
+                            <input type="text" id="name" name="name" placeholder="שם החשבון">
+                        </div>
+                    </div>
+                    <div class="input-group error_append">
+                        <label for="list">בנק (רשימה)</label>
+                        <div class="input ">
+                            <input type="text" id="list" name="list" placeholder="בנק (רשימה)">
+                        </div>
+                    </div>
+                    <div class="input-group error_append">
+                        <label for="br-num">מס. סניף</label>
+                        <div class="input ">
+                            <input type="number" id="br-num" name="brnum" placeholder="מס. סניף">
+                        </div>
+                    </div>
+                    <div class="input-group error_append">
+                        <label for="ac-num">מס.חשבון</label>
+                        <div class="input ">
+                            <input type="number" id="ac-num" name="acnum" placeholder="מס.חשבון">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="btn-beaut">המשך</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="change-modal" tabindex="-1" role="dialog" aria-labelledby="change-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="">בקשתך נשלחה בהצלחה. שירות הלקוחות יצור איתך קשר בהקדם האפשרי</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <footer>
     <div class="container footer_top">
         <div class="footer_right">
