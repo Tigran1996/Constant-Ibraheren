@@ -101,16 +101,16 @@ $(document).ready(function () {
             $(element).closest('.error_append').append(error);
         },
         rules: {
-            name : {
+            owner : {
                 required: true,
             },
-            list : {
+            bank : {
                 required: true,
             },
-            brnum : {
+            branch_number : {
                 required: true,
             },
-            acnum : {
+            account_number : {
                 required: true,
             },
         }
@@ -150,20 +150,20 @@ $(document).ready(function () {
 });
 
 //progress
-xhr.upload.onprogress = function(event) {
-    alert( 'Загружено на сервер ' + event.loaded + ' байт из ' + event.total );
-};
-
-xhr.upload.onload = function() {
-    alert( 'Данные полностью загружены на сервер!' );
-};
-
-xhr.upload.onerror = function() {
-    alert( 'Произошла ошибка при загрузке данных на сервер!' );
-};
-xhr.onprogress = function(event) {
-    alert( 'Получено с сервера ' + event.loaded + ' байт из ' + event.total );
-};
+// xhr.upload.onprogress = function(event) {
+//     alert( 'Загружено на сервер ' + event.loaded + ' байт из ' + event.total );
+// };
+//
+// xhr.upload.onload = function() {
+//     alert( 'Данные полностью загружены на сервер!' );
+// };
+//
+// xhr.upload.onerror = function() {
+//     alert( 'Произошла ошибка при загрузке данных на сервер!' );
+// };
+// xhr.onprogress = function(event) {
+//     alert( 'Получено с сервера ' + event.loaded + ' байт из ' + event.total );
+// };
 
 document.forms.upload.onsubmit = function() {
     var input = this.elements.myfile;
