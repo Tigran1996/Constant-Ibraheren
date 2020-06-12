@@ -2,6 +2,9 @@
   section{
 
   }
+  #invoice{
+    position: relative;
+  }
   &-one{
     margin-top: 28px;
 
@@ -92,7 +95,7 @@
       }
       .progress-list{
         width: 70%;
-        margin-top: 30px;
+        position: absolute;
         .progress-my{
           display: flex;
           justify-content: space-between;
@@ -149,7 +152,7 @@
         }
       }
       .acc-details{
-        margin-top: 30px;
+        margin-top: 95px;
         h5{
           font-weight: 500;
           font-size: 16px;
@@ -347,6 +350,18 @@
   .main_invoice {
     &-one {
       .two-flex {
+        .invoice-num{
+          .upload-div{
+            .input{
+              margin-left: 0;
+              button.btn-transparent{
+                  width: 22%;
+                  font-size: 15px;
+                  padding: 15px 13px;
+              }
+            }
+          }
+        }
         .invoice-list {
           padding: 0;
           border: 0;

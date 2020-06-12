@@ -1330,6 +1330,9 @@ button.close {
       .login_page .center-login .right {
         padding: 0; } }
 
+.main_invoice #invoice {
+  position: relative; }
+
 .main_invoice-one {
   margin-top: 28px; }
   .main_invoice-one h1 {
@@ -1400,7 +1403,7 @@ button.close {
 
 .main_invoice .two-flex .invoice-num .progress-list {
   width: 70%;
-  margin-top: 30px; }
+  position: absolute; }
   .main_invoice .two-flex .invoice-num .progress-list .progress-my {
     display: flex;
     justify-content: space-between;
@@ -1445,7 +1448,7 @@ button.close {
         color: rgba(0, 0, 0, 0.5); }
 
 .main_invoice .two-flex .invoice-num .acc-details {
-  margin-top: 30px; }
+  margin-top: 95px; }
   .main_invoice .two-flex .invoice-num .acc-details h5 {
     font-weight: 500;
     font-size: 16px;
@@ -1584,6 +1587,12 @@ button.close {
   align-items: center; }
 
 @media only screen and (max-width: 719px) {
+  .main_invoice-one .two-flex .invoice-num .upload-div .input {
+    margin-left: 0; }
+    .main_invoice-one .two-flex .invoice-num .upload-div .input button.btn-transparent {
+      width: 22%;
+      font-size: 15px;
+      padding: 15px 13px; }
   .main_invoice-one .two-flex .invoice-list {
     padding: 0;
     border: 0; }
